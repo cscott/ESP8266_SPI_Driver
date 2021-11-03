@@ -1,3 +1,4 @@
+#ifdef ESP8266
 /*
  *  Copyright (c) 2010 - 2011 Espressif System
  *  Modified by David Ogilvy (MetalPhreak)
@@ -276,3 +277,5 @@
 #define SPI_INT_HOLD_ENA 0x00000003
 #define SPI_INT_HOLD_ENA_S 0
 #endif // SPI_REGISTER_H_INCLUDED
+
+#endif

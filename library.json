@@ -1,0 +1,15 @@
+{
+    "name": "ESP8266_SPI_Driver",
+    "version": "0.0.0",
+    "keywords": "spi",
+    "description": "low-level spi driver capable of 9-bit writes",
+    "frameworks": "arduino",
+    "platforms": "espressif8266",
+    "build": {
+        "libArchive": false,
+        "flags": [
+            "-I include"
+        ],
+        "srcDir": "driver"
+    }
+}

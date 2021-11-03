@@ -1,3 +1,4 @@
+#ifdef ESP8266
 /*
 * The MIT License (MIT)
 * 
@@ -24,6 +25,9 @@
 
 #ifndef SPI_APP_H
 #define SPI_APP_H
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "spi_register.h"
 #include "ets_sys.h"
@@ -77,3 +81,7 @@ uint32 spi_transaction(uint8 spi_no, uint8 cmd_bits, uint16 cmd_data, uint32 add
 
 #endif
 
+#ifdef __cplusplus
+}
+#endif
+#endif
